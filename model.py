@@ -384,8 +384,8 @@ def build_and_evaluate_model(df, test_size=0.2, random_state=42):
             # Create and train model
             model = MultinomialLogisticRegression(
                 C=C,
-                max_iter=1000,
-                learning_rate=0.1,
+                max_iter=200,
+                learning_rate=0.5,
                 random_state=random_state,
                 verbose=False
             )
@@ -421,8 +421,8 @@ def build_and_evaluate_model(df, test_size=0.2, random_state=42):
     # Train final model with best parameters
     final_model = MultinomialLogisticRegression(
         C=best_C,
-        max_iter=1000,
-        learning_rate=0.1,
+        max_iter=200,
+        learning_rate=0.5,
         random_state=random_state,
         verbose=True
     )
