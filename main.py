@@ -31,16 +31,20 @@ def main():
 
     # Examples
     examples = [
-        "The company reported a significant increase in quarterly profits.",
-        "Shares plummeted 15% after the disappointing earnings report.",
-        "The merger is expected to be completed by the end of the fiscal year.",
-        "Analysts have maintained a neutral outlook on the stock.",
-        "The company announced layoffs affecting 5% of its workforce.",
-        "Revenue grew by 8% year-over-year, meeting market expectations.",
-        "The regulatory authority imposed a $2 million fine on the bank.",
-        "The startup secured $50 million in Series B funding.",
-        "Interest rates remained unchanged following the central bank meeting.",
-        "The board of directors approved a dividend of $0.25 per share."
+        "Netflix (NFLX) stock rose in after-hours trading on Thursday after beating first-quarter earnings expectations on both revenue and earnings per share.",
+        "Q1 revenue reached $10.54 billion, up 13% year-over-year, surpassing Bloomberg's estimate of $10.50 billion and Netflix's own guidance of $10.42 billion.",
+        "Earnings per share came in at $6.61, beating analyst expectations of $5.68 and the company’s own forecast of $5.58.",
+        "Netflix guided Q2 revenue at $11.04 billion, exceeding analyst expectations of $10.88 billion.",
+        "For full-year 2025, Netflix reiterated its revenue forecast of $43.5 billion to $44.5 billion and projected operating margins of 29%.",
+        "The company highlighted strong performance due to slightly higher subscription and ad revenue.",
+        "Netflix stock was up 9.2% year-to-date through Thursday, outperforming larger tech peers like Apple, Amazon, and Alphabet, which saw declines of 17% or more; the S&P 500 was down about 10% in 2025.",
+        "This was Netflix’s first earnings report without disclosing subscriber numbers, shifting focus to engagement and revenue growth.",
+        "As of the end of 2024, Netflix had 301.6 million global subscribers and added 41 million subscribers during the year.",
+        "Netflix aims to double revenue by 2030 and reach a $1 trillion valuation; its current market cap is just over $400 billion.",
+        "The crackdown on password sharing has driven recent subscriber growth, though its impact is expected to slow.",
+        "Future growth is expected from new content and the ad-supported tier, priced at $7.99/month in the U.S.",
+        "Earlier in 2025, Netflix raised prices across U.S. streaming tiers, including the ad plan, and noted that these adjustments performed as expected.",
+        "On Thursday, Netflix announced price increases in France, effective immediately."
     ]
     
     test_model_on_examples(model, examples, 

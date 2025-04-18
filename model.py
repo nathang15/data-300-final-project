@@ -365,7 +365,7 @@ def build_and_evaluate_model(df, test_size=0.2, random_state=42):
     X_tfidf_array = X_tfidf_scaled.toarray()
     
     # Test regularization values
-    C_values = [0.1, 1.0, 10.0, 100.0]
+    C_values = [1.0, 5.0, 10.0, 100.0]
     
     kf = KFold(n_splits=5, shuffle=True, random_state=random_state)
     
