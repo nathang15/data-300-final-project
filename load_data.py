@@ -13,7 +13,7 @@ from wordcloud import WordCloud
 from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
 import nltk
 
-nltk.download('punkt_ta', quiet=True)
+nltk.download('punkt_tab', quiet=True)
 nltk.download('stopwords', quiet=True)
 
 def download_loughran_mcdonald_lexicon(directory=None):
@@ -138,10 +138,6 @@ def preprocess_text(text, financial_sentiment_lexicon=None):
     """
     stemmer = PorterStemmer()
     stop_words = set(stopwords.words('english'))
-
-    # Financial terms that should not be removed from stop words
-    finance_relevant = {'up', 'down', 'above', 'below', 'under', 'over', 'more', 'less'}
-    stop_words = stop_words - finance_relevant
 
     text = text.lower()
     text = re.sub(f'[{string.punctuation}]', ' ', text)

@@ -309,35 +309,44 @@ class Pipeline:
         return self.clf.predict_proba(X_scaled.toarray())
 
 
-def test_model_on_examples(model, examples, preprocess_text):
-    """Test the trained model on example sentences."""
-    
+def run(model, article, preprocess_text):
     # Preprocess the examples
-    processed_examples = []
-    for example in examples:
-        _, processed = preprocess_text(example)
-        processed_examples.append(processed)
+    processed_sentences = []
+    for sentence in article:
+        _, processed = preprocess_text(sentence)
+        processed_sentences.append(processed)
     
     # Make predictions
-    predictions = model.predict(processed_examples)
+    predictions = model.predict(processed_sentences)
     
     # Get prediction probabilities
-    probabilities = model.predict_proba(processed_examples)
+    probabilities = model.predict_proba(processed_sentences)
     
     # Print results
-    print("\nModel predictions on example sentences:")
+    print("\nModel predictions:")
     print("{:<5} {:<15} {:<15} {:<60}".format("No.", "Prediction", "Confidence", "Sentence"))
     print("-" * 95)
-    
-    for i, (example, prediction, proba) in enumerate(zip(examples, predictions, probabilities), 1):
+    sentiment_counts = {"positive": 0, "negative": 0, "neutral": 0}
+    sentiment_scores = {"positive": 0, "negative": 0, "neutral": 0}
+    for i, (sentence, prediction, proba) in enumerate(zip(article, predictions, probabilities), 1):
         # Get confidence score
         class_idx = list(model.classes_).index(prediction)
         confidence = proba[class_idx]
-        
-        # Truncate long sentences
-        display_text = example if len(example) < 60 else example[:57] + "..."
-        print("{:<5d} {:<15} {:<15.4f} {:<60}".format(i, prediction, confidence, display_text))
+        sentiment_counts[prediction] += 1
+        sentiment_scores[prediction] += confidence
+        print("{:<5d} {:<15} {:<15.4f} {:<60}".format(i, prediction, confidence, sentence))
 
+    weighted_scores = {
+        sentiment: score / max(count, 1) 
+        for sentiment, score, count in zip(
+            sentiment_scores.keys(), 
+            sentiment_scores.values(), 
+            sentiment_counts.values()
+        )
+    }
+    weighted_sentiment = max(weighted_scores, key=weighted_scores.get)
+
+    return weighted_sentiment
 def build_and_evaluate_model(df, test_size=0.2, random_state=42):
     """
     Build and evaluate model with CV = 5
