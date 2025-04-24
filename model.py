@@ -9,7 +9,6 @@ class MultinomialLogisticRegression:
     Multinomial Logistic Regression
     
     Parameters:
-    -----------
     C : float, default=1.0
         Inverse of regularization strength; must be a positive float
         Smaller values specify stronger regularization.
@@ -284,7 +283,6 @@ class MultinomialLogisticRegression:
         probas = self.predict_proba(X)
         indices = np.argmax(probas, axis=1)
         return np.array([self.classes_[idx] for idx in indices])
-
 
 class Pipeline:
     def __init__(self, count_vec, tfidf_transformer, scaler, clf):

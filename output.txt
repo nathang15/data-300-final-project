@@ -1,0 +1,67 @@
+Model predictions:
+No.   Prediction      Confidence      Sentence
+-----------------------------------------------------------------------------------------------
+1     neutral         0.6561          Health insurance company UnitedHealth (NYSE:UNH) fell short of the market’s revenue expectations in Q1 CY2025, but sales rose 9.8% year on year to $109.6 billion.
+2     negative        0.9760          Its non-GAAP profit of $7.20 per share was 1.3% below analysts’ consensus estimates.
+3     negative        0.8358          Revenue: $109.6 billion vs analyst estimates of $111.5 billion (9.8% year-on-year growth, 1.7% miss).
+4     negative        0.9999          Adjusted EPS: $7.20 vs analyst expectations of $7.29 (1.3% miss).
+5     negative        0.9960          Adjusted EPS guidance for the full year is $26.25 at the midpoint, missing analyst estimates by 11.7%.
+6     positive        0.5134          Free Cash Flow Margin: 4.2%, up from 0.4% in the same quarter last year.
+7     neutral         0.9584          Market Capitalization: $535.1 billion.
+8     positive        0.7937          “...return to our long-term earnings growth rate target of 13 to 16%,” said Andrew Witty, chief executive officer of UnitedHealth Group.
+9     positive        0.9981          Over the last five years, UnitedHealth grew its sales at a decent 10.7% compounded annual growth rate.
+10    positive        0.9887          UnitedHealth’s annualized revenue growth of 10.5% over the last two years aligns with its five-year trend.
+11    positive        0.9950          This quarter, UnitedHealth’s revenue grew by 9.8% year on year to $109.6 billion, missing Wall Street’s estimates.
+12    neutral         0.9995          Sell-side analysts expect revenue to grow 12.7% over the next 12 months.
+13    neutral         0.9382          UnitedHealth’s operating margin decreased by 1 percentage point over the last five years.
+14    negative        0.6182          In Q1, UnitedHealth generated an operating profit margin of 8.3%, in line with the same quarter last year.
+15    positive        0.5746          UnitedHealth’s EPS grew at a spectacular 13.1% compounded annual growth rate over the last five years.
+16    negative        0.9260          UnitedHealth has repurchased its stock, shrinking its share count by 4.6%.
+17    negative        1.0000          In Q1, UnitedHealth reported EPS at $7.20, up from $6.91 in the same quarter last year.
+18    negative        0.9991          Wall Street expects UnitedHealth’s full-year EPS of $27.96 to grow 10.1%.
+19    negative        1.0000          Its revenue and EPS in the quarter both fell short of Wall Street’s estimates.
+20    negative        0.9520          Full-year EPS guidance missed significantly as well.
+21    neutral         0.6434          The stock traded down 9.5% to $529.60 immediately after reporting.
+
+Execution completed in 223.12 seconds
+Overall sentiment: negative
+
+Model predictions:
+No.   Prediction      Confidence      Sentence
+-----------------------------------------------------------------------------------------------
+1     neutral         0.9913          Netflix (NFLX) stock climbed in after-hours trading on Thursday after the company delivered first-quarter earnings that beat expectations on both the top and bottom lines and also reiterated full-year revenue guidance.
+2     positive        0.9946          Netflix reported revenue of $10.54 billion in the first quarter, a 13% year-over-year jump and a beat compared to Bloomberg analyst expectations of $10.50 billion.
+3     negative        1.0000          Earnings per share of $6.61 also beat analyst estimates of $5.68.
+4     neutral         0.9932          The company guided to revenue for the current quarter above Wall Street expectations, forecasting Q2 revenue of $11.04 billion compared to the $10.88 billion analysts polled by Bloomberg had expected.
+5     positive        0.6817          For full-year 2025, the company reiterated its prior forecast of $43.5 billion to $44.5 billion revenue growth and operating margins of 29%.
+6     negative        0.7522          Netflix stock was up 9.2% this year through Thursday's close, a standout when measured against year-to-date declines of 17% or more for its larger tech peers.
+7     neutral         0.7944          The S&P 500 (^GSPC) is off about 10% in 2025.
+8     positive        0.6177          "We are off to a good start in 2025," Netflix management said in the earnings release, crediting its results to "slightly higher subscription and ad revenue."
+9     neutral         0.6927          According to the Wall Street Journal, Netflix is targeting lofty financial goals, which include doubling its revenue by 2030 and reaching a valuation of $1 trillion.
+10    neutral         0.8376          The streamer's market cap is currently just north of $400 billion.
+11    neutral         1.0000          The company expects subscriber upside from its content slate, with its ad tier serving as a longer-term catalyst for capturing new users.
+
+Execution completed in 75.95 seconds
+Overall sentiment: neutral
+
+Model predictions:
+No.   Prediction      Confidence      Sentence
+-----------------------------------------------------------------------------------------------
+1     negative        0.8098          Apple Inc. (AAPL) reported its fiscal second-quarter 2025 results, showing mixed performance amid challenging market conditions.
+2     negative        0.9999          The company posted revenue of $90.8 billion, representing a 2.3% decrease from the same period last year and falling slightly below analyst expectations of $91.2 billion.
+3     negative        0.9808          iPhone revenue, which accounts for approximately half of Apple's total sales, declined 4.5% year-over-year to $45.96 billion.
+4     positive        0.9800          Apple's services segment, which includes Apple Music, Apple TV+, App Store, and iCloud, continued its strong momentum, growing by 14.2% to $23.6 billion.
+5     positive        1.0000          This exceeded analyst forecasts of $23.1 billion and demonstrated the company's successful pivot toward recurring revenue streams.
+6     negative        0.9780          Wearables, Home, and Accessories revenue decreased by 7.1% to $8.5 billion.
+7     neutral         0.4164          Mac revenue showed surprising resilience, increasing 3.6% to $7.5 billion.
+8     negative        0.9893          iPad sales fell 14.8% to $5.2 billion.
+9     negative        0.7095          Apple's gross margin came in at 43.2%, down from 44.1% in the previous quarter but still historically high for the company.
+10    negative        1.0000          Operating income decreased by 5.8% to $28.8 billion.
+11    negative        0.8110          Apple provided cautious guidance for the fiscal third quarter, projecting revenue between $86 billion and $89 billion, which would represent a year-over-year decline of approximately 1-4%.
+12    positive        0.6279          Apple returned $27 billion to shareholders through dividends and share repurchases during the quarter.
+13    positive        0.6394          The company also announced an increase in its share repurchase authorization by $100 billion and raised its quarterly dividend by 5% to $0.26 per share.
+14    negative        0.6014          Apple's cash position remains strong, with $179 billion in cash and marketable securities, slightly offset by $103 billion in debt, resulting in a net cash position of $76 billion.
+15    neutral         1.0000          The stock reacted negatively to the results, trading down approximately 3.5% in after-hours trading following the announcement.
+
+Execution completed in 35.40 seconds
+Overall sentiment: negative
