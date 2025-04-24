@@ -6,7 +6,7 @@ from summarizer import *
 from model_utils import *
 
 def main():
-    API_KEY = "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"
+    API_KEY = 
     print("Financial Sentiment Analysis with Custom Multinomial Logistic Regression")
     print("=" * 70)
     start_time = time.time()
