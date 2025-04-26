@@ -45,7 +45,7 @@ def main():
         model = load_model(model_path)
         financial_sentiment_lexicon = load_financial_sentiment_lexicon('data')
     
-    article_path = 'example_articles/apple.json'
+    article_path = 'example_articles/netflix.json'
     
     try:
         print(f"\nLoading article from {article_path}...")
@@ -62,9 +62,7 @@ def main():
         print(f"Error: Article file not found at {article_path}")
     except Exception as e:
         print(f"An error occurred: {e}")
-    
-    result = run(model, sentences, lambda text: preprocess_text(text, financial_sentiment_lexicon))
-    
+        
     execution_time = time.time() - start_time
     print(f"\nExecution completed in {execution_time:.2f} seconds")
     print("Overall sentiment: " + result)
