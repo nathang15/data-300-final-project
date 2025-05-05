@@ -1,7 +1,7 @@
 import requests
 import json
 
-def summarize(article_text, api_key, model_name="deepseek/deepseek-r1:free"):
+def summarize(article_text, api_key, model_name="deepseek/deepseek-chat-v3-0324:free"):
     base_url = "https://openrouter.ai/api/v1/chat/completions"
     
     prompt = f"""
