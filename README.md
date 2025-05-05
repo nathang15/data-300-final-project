@@ -4,16 +4,13 @@
 
 ## Overview
 
-This project implements a financial sentiment analysis system using a custom Multinomial Logistic Regression model. The system analyzes financial news articles to determine sentiment (positive, negative, or neutral) by leveraging domain-specific financial lexicons and advanced text preprocessing techniques.
+This project implements a financial sentiment analysis system using a Multinomial Logistic Regression model. The system analyzes financial news articles to determine sentiment (positive, negative, or neutral) by leveraging domain-specific financial lexicons and advanced text preprocessing techniques.
 
 ## Features
-
 - Custom implementation of Multinomial Logistic Regression with:
   - Mini-batch gradient descent
-  - Adaptive learning rate with decay
   - L2 regularization
   - Gradient clipping
-  - Numerically stable softmax
 - Financial-specific text preprocessing:
   - Integration of Loughran-McDonald financial sentiment lexicon
   - Specialized tokenization and stemming
